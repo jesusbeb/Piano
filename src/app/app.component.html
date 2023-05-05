@@ -1,19 +1,26 @@
 <!--Usamos este componente de bootstrap
-    Components, List Group, For links and buttons. Pegamos el codigo
+    Components, List Group, For links and buttons. Pegamos el codigo, dejamos solo 7 etiquetas
+    y le eliminamos algunas instrucciones
 -->
-<div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
-  
-    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-  </div>
+<div class="row">
+    <div class="col-lg-4"> <!--columna con lg de 4 y dentro metemos las filas(click)="aplicarSonido(1)" -->
+        <div class="list-group">
+            <!--Usamos event binding para cuando se hace clic en alguna fila-->
+            <a (click)="aplicarSonido(1)" class="list-group-item list-group-item-action" style="background-color: red;"> </a>
+            <a (click)="aplicarSonido(2)" class="list-group-item list-group-item-action" style="background-color: orange;"> </a>
+            <a (click)="aplicarSonido(3)" class="list-group-item list-group-item-action" style="background-color: yellow;"> </a>
+            <a (click)="aplicarSonido(4)" class="list-group-item list-group-item-action" style="background-color: green;"> </a>
+            <a (click)="aplicarSonido(5)" class="list-group-item list-group-item-action" style="background-color: teal;"> </a>
+            <a (click)="aplicarSonido(6)" class="list-group-item list-group-item-action" style="background-color: blue;"> </a>
+            <a (click)="aplicarSonido(7)" class="list-group-item list-group-item-action" style="background-color: purple;"> </a>
+        </div>
+    </div>
+</div>
 
+
+
+  <!--
   <audio controls>
     <source src="../assets/sonidos/note2.wav">
   </audio>
+    -->
